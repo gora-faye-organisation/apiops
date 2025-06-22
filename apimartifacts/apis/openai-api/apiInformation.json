@@ -1,0 +1,7 @@
+{
+  "name": "openai-api",
+  "displayName": "OpenAI API",
+  "description": "Proxy for OpenAI API",
+  "serviceUrl": "https://api.openai.com/v1",
+  "path": "openai"
+}
