@@ -1,0 +1,11 @@
+openapi: 3.0.1
+info:
+  title: OpenAI API
+  version: "1.0"
+paths:
+  /completions:
+    post:
+      summary: Create completion
+      responses:
+        '200':
+          description: OK
