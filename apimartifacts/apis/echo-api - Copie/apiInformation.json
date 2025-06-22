@@ -1,15 +1,14 @@
 {
   "properties": {
+    "path": "echo",
     "apiRevision": "1",
     "authenticationSettings": {},
-    "description": "",
-    "displayName": "testapi",
     "isCurrent": true,
-    "path": "test",
+    "displayName": "Echo API",
     "protocols": [
       "https"
     ],
-    "serviceUrl": "https://api.waelsconsulting.com/test",
+    "serviceUrl": "https://echo.playground.azure-api.net/api",
     "subscriptionKeyParameterNames": {
       "header": "Ocp-Apim-Subscription-Key",
       "query": "subscription-key"
