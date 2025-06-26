@@ -1,0 +1,34 @@
+openapi: 3.0.1
+info:
+  title: OpenAI Proxy API
+  version: '1.0'
+servers:
+  - url: https://apiops-poc-dev-apim.azure-api.net/openai
+paths:
+  /chat/completions:
+    post:
+      summary: CreateChatCompletion
+      description: Appelle l’API OpenAI pour générer une réponse basée sur un prompt.
+      operationId: createchatcompletion
+      parameters:
+        - name: api-version
+          in: query
+          description: Version de l’API (optionnel)
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Réponse réussie
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]

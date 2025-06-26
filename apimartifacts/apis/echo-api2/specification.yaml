@@ -1,9 +1,9 @@
 openapi: 3.0.1
 info:
-  title: echo-api2
+  title: Echo API2
   version: '1.0'
 servers:
-  - url: https://apiops-poc-dev-apim.azure-api.net/echo
+  - url: https://apiops-poc-dev-apim.azure-api.net/echo2
 paths:
   /resource:
     get:

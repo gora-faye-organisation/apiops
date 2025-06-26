@@ -1,0 +1,9 @@
+{
+  "properties": {
+    "displayName": "OpenAI-Service",
+    "description": "poc apiops",
+    "approvalRequired": false,
+    "state": "published",
+    "subscriptionRequired": true
+  }
+}

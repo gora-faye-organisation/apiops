@@ -1,0 +1,18 @@
+<policies>
+	<inbound>
+		<base />
+		<!-- Rate limit: 10 appels par minute par abonnement -->
+		<rate-limit-by-key calls="10" renewal-period="60" counter-key="@(context.Subscription.Id)" />
+		<!-- Quota mensuel: 1000 appels par abonnement -->
+		<quota-by-key calls="1000" renewal-period="2628000" counter-key="@(context.Subscription.Id)" />
+	</inbound>
+	<backend>
+		<base />
+	</backend>
+	<outbound>
+		<base />
+	</outbound>
+	<on-error>
+		<base />
+	</on-error>
+</policies>
